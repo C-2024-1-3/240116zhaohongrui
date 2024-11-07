@@ -252,25 +252,22 @@ void test2_7()
 	}
 }
 void test2_8()
-{	{
-		double a;
-		cout << "请输入一个数 a：";
-		cin >> a;
-
-		double xn = a;
-		double xn1;
-		do {
-			xn1 = (xn + a / xn) / 2;
-			if (fabs(xn1 - xn) < 1e-5) {
-				break;
-			}
-			xn = xn1;
-		} while (true);
-
-		cout << "a 的平方根约为：" << xn1 << endl;
-
-	
-	}
+{	   double a;
+    cout << "请输入一个数 a：";
+    cin >> a;
+    if (a < 0) {
+        cout << "输入的数为负数，其平方根为虚数，无法用此迭代法求解。" << endl;
+    } else {
+        double xn = a;
+        double xn1;
+        do {
+            xn1 = 0.5 * (xn + a / xn);
+            if (abs(xn1 - xn) < 1e-5) {
+                break;
+            }
+            xn = xn1;
+        } while (true);
+        cout << a << "的平方根为：" << xn1 << endl;
 }
 void test2_9()
 {
