@@ -15,10 +15,10 @@ void test1_1()
 void test1_2()
 {
 	float r, h;
-	const float ¦Ð = 3.14;
-	cout << "ÇëÊäÈëÔ²×¶µÄµ×±ß°ë¾¶ºÍ¸ß" << endl;
+	const float Ï€ = 3.14;
+	cout << "è¯·è¾“å…¥åœ†é”¥çš„åº•è¾¹åŠå¾„å’Œé«˜" << endl;
 	cin >> r>> h;
-	float v = (¦Ð * r * r) * h / 3;
+	float v = (Ï€ * r * r) * h / 3;
 
 }
 void test1_3()
@@ -48,18 +48,18 @@ void test1_4()
 void test1_5()
 {
 	double fahrenheit;
-	std::cout << "ÇëÊäÈë»ªÊÏÎÂ¶È£º";
+	std::cout << "è¯·è¾“å…¥åŽæ°æ¸©åº¦ï¼š";
 	std::cin >> fahrenheit;
 
 	double celsius = (fahrenheit - 32) * 5 / 9;
 
 	cout <<fixed <<setprecision(2);
-	cout << "¶ÔÓ¦µÄÉãÊÏÎÂ¶ÈÎª£º" << celsius << endl;
+	cout << "å¯¹åº”çš„æ‘„æ°æ¸©åº¦ä¸ºï¼š" << celsius << endl;
 }
 void test2_1()
 {
 		char ch;
-		cout << "ÇëÊäÈëÒ»¸ö×Ö·û£º";
+		cout << "è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ï¼š";
 		cin >> ch;
 
 		if (ch >= 'a' && ch <= 'z') {
@@ -88,86 +88,87 @@ void test2_2()
 	}
 	else
 	{
-		cout << "ÄúÊäÈëµÄÊý×Ö²»ÔÚ¸ø¶¨·¶Î§ÄÚ" << endl;
+		cout << "æ‚¨è¾“å…¥çš„æ•°å­—ä¸åœ¨ç»™å®šèŒƒå›´å†…" << endl;
 		system("pause");
 	}
 	cout << y << endl;
 }
-void text2_3()
+void test2_3()
 {
 	int a, b, c;
-	cout << "ÇëÊäÈëÈý½ÇÐÎµÄÈýÌõ±ß³¤£º" << endl;
+	cout << "è¯·è¾“å…¥ä¸‰è§’å½¢çš„ä¸‰æ¡è¾¹é•¿ï¼š" << endl;
 	cin >> a>> b>> c;
 	if (a + b > c && a + c > b && b + c > a)
 	{
+		cout<<"æ‚¨è¾“å…¥çš„ä¸‰è§’å½¢çš„è¾¹é•¿æ˜¯ï¼š"<<a+b+c<<endl;
 		if (a == b && b == c && a == c)
 		{
-			cout << "ÄúÊäÈëµÄÊÇµÈÑüÈý½ÇÐÎ" << endl;
+			cout << "æ‚¨è¾“å…¥çš„æ˜¯ç­‰è…°ä¸‰è§’å½¢" << endl;
 		}
 		else
 		{
-			cout << "ÄúÊäÈëµÄ²»ÊÇµÈÑüÈý½ÇÐÎ" << endl;
+			cout << "æ‚¨è¾“å…¥çš„ä¸æ˜¯ç­‰è…°ä¸‰è§’å½¢" << endl;
 		}
 	}
 	else
 	{
-		cout << "ÄúÊäÈëµÄ²»ÊÇÈý½ÇÐÎ" << endl;
+		cout << "æ‚¨è¾“å…¥çš„ä¸æ˜¯ä¸‰è§’å½¢" << endl;
 	}
 }
 void test2_4()
 {
 	float a, b;
 	char c;
-	cout << "ÇëÊäÈëµÚÒ»¸öÊý×Ö" << endl;
+	cout << "è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•°å­—" << endl;
 	cin >> a;
-	cout << "ÇëÊäÈëµÚ¶þ¸öÊý×Ö" << endl;
+	cout << "è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•°å­—" << endl;
 	cin >> b;
-	cout<< "ÇëÊäÈëÔËËã·û" << endl;
+	cout<< "è¯·è¾“å…¥è¿ç®—ç¬¦" << endl;
 	cin >> c;
 	if (c == '+')
 	{
-		cout << "½á¹ûÊÇ£º" << a + b << endl;
+		cout << "ç»“æžœæ˜¯ï¼š" << a + b << endl;
 	}
 	else if (c == '-')
 	{
-		cout << "½á¹ûÊÇ£º" << a - b << endl;
+		cout << "ç»“æžœæ˜¯ï¼š" << a - b << endl;
 	}
 	else if (c == '*')
 	{
-		cout << "½á¹ûÊÇ£º" << a * b << endl;
+		cout << "ç»“æžœæ˜¯ï¼š" << a * b << endl;
 	}
 	else if (c == '/')
 	{
 		if (b == 0)
 		{
-			cout << "³ýÊý²»ÄÜÎªÁã" << endl;
+			cout << "é™¤æ•°ä¸èƒ½ä¸ºé›¶" << endl;
 			return;
 		}
 		else
 		{
-			cout << "½á¹ûÊÇ£º" << a / b << endl;
+			cout << "ç»“æžœæ˜¯ï¼š" << a / b << endl;
 		}
 	}
 	else if (c == '%')
 	{
 		if (b == 0)
 		{
-			cout << "³ýÊý²»ÄÜÎªÁã" << endl;
+			cout << "é™¤æ•°ä¸èƒ½ä¸ºé›¶" << endl;
 			return;
 		}
 		else {
-			cout << "½á¹ûÊÇ£º" << (int)a % (int)b << endl;
+			cout << "ç»“æžœæ˜¯ï¼š" << (int)a % (int)b << endl;
 		}
 	}
 	else
 	{
-		cout << "ÄúÊäÈëµÄÔËËã·û²»ÕýÈ·" << endl;
+		cout << "æ‚¨è¾“å…¥çš„è¿ç®—ç¬¦ä¸æ­£ç¡®" << endl;
 	}
 }
 void test2_5()
 {
 	char str[1000];
-	cout << "ÇëÊäÈëÒ»ÐÐ×Ö·û£º";
+	cout << "è¯·è¾“å…¥ä¸€è¡Œå­—ç¬¦ï¼š";
 	cin.getline(str, 1000);
 
 	int letterCount = 0;
@@ -191,10 +192,10 @@ void test2_5()
 		}
 	}
 
-	cout << "Ó¢ÎÄ×ÖÄ¸¸öÊý£º" << letterCount << endl;
-	cout << "¿Õ¸ñ¸öÊý£º" << spaceCount << endl;
-	cout << "Êý×Ö×Ö·û¸öÊý£º" << digitCount << endl;
-	cout << "ÆäËü×Ö·û¸öÊý£º" << otherCount << endl;
+	cout << "è‹±æ–‡å­—æ¯ä¸ªæ•°ï¼š" << letterCount << endl;
+	cout << "ç©ºæ ¼ä¸ªæ•°ï¼š" << spaceCount << endl;
+	cout << "æ•°å­—å­—ç¬¦ä¸ªæ•°ï¼š" << digitCount << endl;
+	cout << "å…¶å®ƒå­—ç¬¦ä¸ªæ•°ï¼š" << otherCount << endl;
 }
 void test2_6()
 {
@@ -217,7 +218,7 @@ void test2_6()
 		{
 			if(arr1[i]==arr2[j])
 			{
-				cout << "aÓëbµÄ×îÐ¡¹«±¶ÊýÊÇ£º" << arr1[i]<<endl;
+				cout << "aä¸Žbçš„æœ€å°å…¬å€æ•°æ˜¯ï¼š" << arr1[i]<<endl;
 				breakall = true;
 				break;
 			}
@@ -237,7 +238,7 @@ void test2_6()
 		b = a % b;
 		a = temp;
 	}
-	cout << "×î´ó¹«Ô¼ÊýÊÇ£º" << a << endl;
+	cout << "æœ€å¤§å…¬çº¦æ•°æ˜¯ï¼š" << a << endl;
 }
 void test2_7()
 {
@@ -250,10 +251,10 @@ void test2_7()
 		cout << endl;
 	}
 }
-void test8()
+void test2_8()
 {	{
 		double a;
-		cout << "ÇëÊäÈëÒ»¸öÊý a£º";
+		cout << "è¯·è¾“å…¥ä¸€ä¸ªæ•° aï¼š";
 		cin >> a;
 
 		double xn = a;
@@ -266,12 +267,12 @@ void test8()
 			xn = xn1;
 		} while (true);
 
-		cout << "a µÄÆ½·½¸ùÔ¼Îª£º" << xn1 << endl;
+		cout << "a çš„å¹³æ–¹æ ¹çº¦ä¸ºï¼š" << xn1 << endl;
 
 	
 	}
 }
-void test9()
+void test2_9()
 {
 	
 	float price = 0.8;
@@ -283,7 +284,7 @@ void test9()
 		days++;
 	}
 	float average = allprice / days;
-	cout <<allprice<< "Ã¿ÌìÆ½¾ù»¨" << average << "Ôª" << endl;
+	cout <<allprice<< "æ¯å¤©å¹³å‡èŠ±" << average << "å…ƒ" << endl;
 }
 
 
